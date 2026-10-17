@@ -8,11 +8,7 @@ Projet informatique collectif réalisé à l'INSA Lyon, en équipe de cinq étud
 
 ## Principe du jeu
 
-Une épidémie apparaît dans une ville et menace de se propager à l'ensemble du réseau mondial.
-Le joueur organise la réponse en choisissant les mesures sanitaires et économiques à appliquer dans chaque ville.
-À chaque tour, il décide du nombre de jours écoulés et doit arbitrer entre limitation des contaminations, coût des interventions et maintien de la popularité.
-Les investissements locaux peuvent renforcer les mesures dans les villes voisines, tandis que la recherche fait progresser le développement d'un vaccin.
-Deux voies permettent de gagner : contenir l'épidémie pendant 100 jours ou achever les quatre étapes de la recherche vaccinale et leurs délais, tout en préservant la population et la popularité.
+Une épidémie se propage entre les grandes villes d'un réseau mondial. Le joueur choisit des mesures sanitaires et économiques locales en gérant son budget et sa popularité. À chaque tour, il décide du nombre de jours écoulés puis observe les effets de ses décisions sur la propagation et les ressources. Il gagne en contenant l'épidémie pendant 100 jours ou en achevant les quatre étapes de recherche du vaccin et leurs délais, sans atteindre les seuils de défaite.
 
 - Carte interactive et informations sur les villes.
 - Modèle à compartiments **SEIRD** : sains, exposés, infectés, rétablis et décédés.
