@@ -10,6 +10,7 @@ from Modele import Virus
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from PIL import Image, ImageTk
+from pathlib import Path
 
 
 # Classes
@@ -47,7 +48,7 @@ class Monde(tk.Tk):
         self.tooltip = tk.Label(self.carte, text="", bg="white")
         
         # Chargement de la carte en fond
-        img = Image.open("carte_monde.png").resize((l_canvas, h_canvas), Image.LANCZOS)
+        img = Image.open(Path(__file__).resolve().parent / "carte_monde.png").resize((l_canvas, h_canvas), Image.Resampling.LANCZOS)
         self.bg_img = ImageTk.PhotoImage(img)
 
         # self.wm_attributes('-transparentcolor','black')
