@@ -4,7 +4,7 @@ Les CSV historiques sont lus avec l'encodage Windows-1252 (`cp1252`), le sépara
 
 ## Villes du jeu
 
-Nom attendu : `Worldcities - Données Villes 2.csv` (espace avant `2`). Chaque ligne contient douze colonnes :
+Nom attendu : `Worldcities - Données Villes 2.csv`. Chaque ligne contient douze colonnes :
 
 1. Nom de la ville.
 2. Nom du pays.
@@ -19,7 +19,7 @@ Nom attendu : `Worldcities - Données Villes 2.csv` (espace avant `2`). Chaque l
 11. Statut de la ville.
 12. Poids associé au statut, entier.
 
-Le programme charge les vingt premières villes. La date et la source initiale des valeurs économiques restent à documenter.
+Le programme charge les vingt premières villes. La source indiquée par l'équipe pour les villes et leur classement est [World Cities 2024 — Globalization and World Cities Research Network (GaWC)](https://gawc.lboro.ac.uk/gawc-worlds/the-world-according-to-gawc/world-cities-2024/).
 
 ## Virus
 
@@ -29,9 +29,9 @@ Les noms sont utilisés par les boutons de sélection du jeu et doivent rester c
 
 ## Étude de complexité
 
-`Worldcities - Données Villes_2.csv` (soulignement avant `2`) contient quatre colonnes : nom, latitude, longitude et population. Il sert à `Calculs_complexite.py` et ne fournit pas les données économiques et nationales du jeu.
+`Worldcities - Données Villes_2.csv` contient quatre colonnes : nom, latitude, longitude et population. Il sert uniquement à `Calculs_complexite.py` pour l'étude des temps de calcul et n'est pas nécessaire au lancement du jeu.
 
 ## Carte
 
-`carte_monde.png` est utilisée comme fond de carte et redimensionnée aux dimensions du canevas. Son origine et ses conditions de redistribution restent à documenter.
+`carte_monde.png` est utilisée comme fond de carte et redimensionnée aux dimensions du canevas. Cette image « libre de droits » provient de [Shutterstock](https://www.shutterstock.com/) et conserve sa licence d'origine ; elle n'entre pas dans le périmètre MIT du code. Voir [les crédits et la licence](credits-et-licence.md).
 

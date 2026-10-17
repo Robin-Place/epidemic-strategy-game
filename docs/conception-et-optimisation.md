@@ -46,5 +46,5 @@ Ces vérifications ne valident pas une partie complète, toutes les interactions
 
 ## Sources du projet
 
-Cette présentation s'appuie sur le rapport de six pages et l'ancien README fournis par Robin PLACE, ainsi que sur les fichiers Python du dépôt. Les commandes génériques GitLab présentes à la fin de l'ancien README n'ont pas été reprises : elles ne décrivaient pas le fonctionnement du jeu.
+Cette présentation s'appuie sur le rapport universitaire de six pages fourni par Robin PLACE et sur l'implémentation du projet.
 

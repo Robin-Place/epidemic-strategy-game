@@ -1,6 +1,6 @@
 # Guide du jeu
 
-Ce guide reprend l'ancien README du projet et les règles présentes dans le code. Le joueur cherche à contenir une épidémie dans un réseau de grandes villes, en gérant son budget et sa popularité.
+Le joueur cherche à contenir une épidémie dans un réseau de grandes villes, en gérant son budget et sa popularité.
 
 ## Démarrer et jouer un tour
 
@@ -20,26 +20,32 @@ Survoler une ville permet d'en consulter les informations. La sélectionner ouvr
 - **Port du masque** et **campagne de prévention** : agissent sur les paramètres de transmission.
 - **Développement hôpitaux** : agit sur les paramètres de guérison et de mortalité.
 - **Confinement** et **quarantaine** : réduisent la propagation avec des conséquences économiques et politiques.
-- **Boost économique** : modifie le revenu de la ville.
-- **Usines** et **base militaire** : appliquent des effets de soutien dans un rayon autour de la ville.
+- **Boost économique** : augmente le revenu de la ville, mais aussi ses paramètres de transmission ; le bénéfice économique s'accompagne donc d'un risque accru de propagation.
+- **Usines** : renforcent les effets du port du masque et du développement des hôpitaux dans les villes situées dans leur rayon d'action, tout en réduisant le coût de ces mesures.
+- **Base militaire** : renforce les effets du confinement et de la quarantaine dans les villes situées dans son rayon d'action.
 
-Les mesures combinent coûts, effets sur les paramètres, popularité et délais d'activation. L'ancien README est un document de conception ; les valeurs exactes et certains comportements doivent être vérifiés dans le code et par une partie de démonstration.
+Les mesures combinent coûts, effets sur les paramètres de propagation, popularité et délais d'activation. Consulter les informations d'une mesure avant de l'activer permet d'en évaluer les bénéfices et les contreparties.
 
 ## Recherche du vaccin
 
-La recherche est accessible depuis la fenêtre principale. Elle se déroule en quatre étapes. Le code prévoit un délai avant la progression effective et applique les effets de la recherche par l'intermédiaire des paramètres de vaccination.
+La recherche est accessible depuis la fenêtre principale et se déroule en quatre étapes, à financer successivement. Chaque étape nécessite un délai avant d'être achevée ; les progrès de la recherche améliorent les effets de la vaccination. Une fois les quatre étapes et leurs délais terminés, la recherche du vaccin permet de remporter la partie, à condition qu'aucune condition de défaite ne soit atteinte.
 
 ## Budget et popularité
 
 Le budget comprend un stock disponible et des revenus calculés à partir des villes, de leurs populations encore actives et des mesures appliquées. La popularité est une ressource globale, qui influe sur le coût et la disponibilité de certaines mesures.
 
-Le guide historique décrit plusieurs seuils de popularité. La version du dépôt conserve la logique existante ; une vérification complète des seuils et des actions reste distincte des tests du modèle.
+Une popularité faible rend certaines mesures plus coûteuses et peut en rendre d'autres indisponibles. Il faut donc surveiller cet indicateur autant que le budget et l'évolution de l'épidémie.
 
 ## Fin de partie
 
-Le code déclare une défaite si la population infectée atteint 75 % de la population de référence, si les décès atteignent 25 %, ou si la popularité tombe à zéro. Ces contrôles précèdent les contrôles de victoire.
+La partie est perdue si la population infectée atteint 75 % de la population de référence, si les décès atteignent 25 %, ou si la popularité tombe à zéro.
 
-La recherche vaccinale arrivée à l'étape 4 peut déclencher une victoire. À partir du jour 100, le code vérifie également si la proportion d'infectés reste sous 25 %, sous réserve des conditions de défaite déjà contrôlées.
+Deux objectifs permettent de remporter la partie :
+
+- Achever les quatre étapes de recherche du vaccin et leurs délais.
+- Atteindre le jour 100 avec moins de 25 % de la population infectée.
+
+Dans les deux cas, les seuils de défaite doivent rester respectés. Si plusieurs seuils sont atteints au même tour, une condition de défaite prend le dessus sur un objectif de victoire.
 
 ## Pour comprendre le projet
 
