@@ -31,7 +31,7 @@ Voir [la conception et l'optimisation](docs/conception-et-optimisation.md) et [l
 
 **Robin PLACE : contribution transversale au développement de l'application**, dans le cadre du travail collectif de l'équipe.
 
-Le projet a été réalisé avec **Seymour LOI, Juliette Herr-Peyrot, Emilie LESOMMERE et Mai-Linh Duong**.
+Le projet a été réalisé avec **Seymour LOI, Juliette HERR-PEYROT, Emilie LESOMMERE et Mai-Linh DUONG**.
 
 ## Installation et lancement
 
