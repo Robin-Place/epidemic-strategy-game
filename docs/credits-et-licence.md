@@ -4,9 +4,9 @@
 
 - Robin PLACE
 - Seymour LOI
-- Juliette Herr-Peyrot
+- Juliette HERR-PEYROT
 - Emilie LESOMMERE
-- Mai-Linh Duong
+- Mai-Linh DUONG
 
 Robin PLACE décrit sa contribution comme transversale au développement de l'application. Les rôles des autres membres ne sont pas attribués individuellement dans cette documentation.
 

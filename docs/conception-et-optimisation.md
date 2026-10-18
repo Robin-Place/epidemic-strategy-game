@@ -43,8 +43,3 @@ Ces pourcentages décrivent les mesures du rapport, pas des essais reproduits lo
 Les tests ajoutés contrôlent des comportements du modèle : délais des mesures, revenu, probabilités du réseau, propagation et lecture des CSV. Une simulation sans interface a également été effectuée sur 20 villes pendant deux tours de cinq jours.
 
 Ces vérifications ne valident pas une partie complète, toutes les interactions de l'interface ou le modèle sur de très grands réseaux.
-
-## Sources du projet
-
-Cette présentation s'appuie sur le rapport universitaire de six pages fourni par Robin PLACE et sur l'implémentation du projet.
-
